@@ -9,9 +9,6 @@ jobs:
   expressions:
     runs-on: ubuntu-latest
     steps:
-      - name: first step
-        if: pass
-        run: echo this is a test
       - name: contains
         if: contains(github.repository, "Darker")
         run: echo This repo contains Darker
