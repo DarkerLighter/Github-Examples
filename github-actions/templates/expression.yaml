@@ -9,7 +9,7 @@ jobs:
   expressions:
     runs-on: ubuntu-latest
     steps:
-      - name: contains
+      - name: contains  
         if: contains(github.repository, 'Darker')
         run: echo This repo contains Darker
       - name: startsWith
