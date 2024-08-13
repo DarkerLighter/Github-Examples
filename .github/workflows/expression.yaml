@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: contains
-        if: contains(github.repository, Darker)
+        if: contains(github.repository, 'Darker')
         run: echo This repo contains Darker
       - name: startsWith
-        if: startsWith(test,te)
+        if: startsWith('test','te')
         run: echo this words starts with te
