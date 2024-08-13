@@ -10,7 +10,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: group loggins
-       runs: |
+       run: |
          echo "::group::My Group"
          echo "msg 1"
          echo "msg 2"
