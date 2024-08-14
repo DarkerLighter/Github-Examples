@@ -5,9 +5,14 @@ on:
     branches:
       - main
 
+env:
+  DAY_OF_WEEK: Monday
+
 jobs:
   contexts:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     steps:
       - name: My Step
         run: echo "Hello World from ${{ github.workflow	}}"
+      - name: env step
+        run: echo "the choosen week of the day is $DAY_OF_WEEK"
