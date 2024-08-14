@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu latest
     steps:
       - name: My Step
-        run: echo "Hello World from {{ github.workflow	}}"
+        run: echo "Hello World from ${{ github.workflow	}}"
