@@ -1,0 +1,13 @@
+name: Contexts
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  contexts:
+    runs-on: ubuntu latest
+    steps:
+      - name: My Step
+        run: echo "Hello World from {{ github.workflow	}}"
